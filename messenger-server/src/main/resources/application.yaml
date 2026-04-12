@@ -1,3 +1,23 @@
 spring:
-  application:
-    name: messenger-server
+  datasource:
+    url: jdbc:postgresql://localhost:5433/${DB_NAME}
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+    properties:
+      hibernate:
+        format_sql: true
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+
+application:
+  name: messenger-server
+
+  security:
+    jwt:
+      secretKey: ${JWT_SECRET_KEY}
+      expiration: ${JWT_EXPIRATION}
