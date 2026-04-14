@@ -3,7 +3,6 @@ package com.example.messenger.controller;
 import com.example.messenger.model.ChatMessage;
 import com.example.messenger.service.ChatService;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.messaging.handler.annotation.DestinationVariable;
 import org.springframework.messaging.handler.annotation.MessageMapping;
 import org.springframework.messaging.handler.annotation.Payload;

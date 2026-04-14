@@ -57,7 +57,7 @@ public class SecurityConfig {
                                 "/api/auth/token",
                                 "/api/auth/register",
                                 "/ws",
-                                "stomp"
+                                "/stomp"
                         ).permitAll()
                                 .anyRequest()
                                 .authenticated()
